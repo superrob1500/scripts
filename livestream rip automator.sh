@@ -1,5 +1,5 @@
 #!/bin/bash
-#Version 2.0
+#Version 1.0.3
 #A script to record a livestream using streamlink
 
 help="
@@ -21,6 +21,7 @@ function getformats() {
   if [[ -z "$LINK" ]];
 then
       echo "No link, please use -h for help."
+      exit 1
 else
       /usr/bin/youtube-dl --list-formats $LINK
 fi
