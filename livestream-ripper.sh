@@ -1,5 +1,5 @@
 #!/bin/bash
-#Version 1.0.3
+#Version 1.0.4
 #A script to record a livestream using streamlink
 
 help="
@@ -51,7 +51,7 @@ then
       echo "Error you must include a link and a playlist number. Please use -r to find your playlist number."
       exit 1
 else
-      PLAYLIST=$(/usr/bin/youtube-dl -f $RES -g $LINK) #change back to /usr/bin
+      PLAYLIST=$(/usr/bin/youtube-dl -f $RES -g $LINK)
 fi
 }
 
